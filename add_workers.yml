@@ -1,0 +1,7 @@
+---
+- name: add worker nodes
+  hosts: workers
+  become: yes
+  tasks:
+  - name: init_workers
+    command:

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ansible-playbook copy_ssh_id_user.yml --ask-pass
+ansible-playbook copy_ssh_id_root.yml -b --ask-become-pass

@@ -1,0 +1,7 @@
+---
+- name: add master nodes
+  hosts: masters
+  become: yes
+  tasks:
+  - name: init_master
+    command:

@@ -1,0 +1,9 @@
+---
+- name: Install ssh key
+  hosts: nodes
+  tasks:
+  - name: Install Key ...
+    authorized_key:
+      user: root
+      state: present
+      key: "{{lookup('file','/home/ubuntu/.ssh/id_rsa.pub')}}"

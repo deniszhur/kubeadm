@@ -1,0 +1,25 @@
+[nodes]
+node01   ansible_host=192.168.100.201
+#node02   ansible_host=192.168.100.126 
+#node03   ansible_host=192.168.100.127
+node04   ansible_host=192.168.100.128
+#node05   ansible_host=192.168.100.211
+#node06   ansible_host=192.168.100.212
+
+[rename]
+node01 new_hostname=DEV-KUBE-CAP01P
+node02 new_hostname=DEV-KUBE-CAP02P
+node03 new_hostname=DEV-KUBE-CAP03P
+node04 new_hostname=DEV-KUBE-CAP04P
+node05 new_hostname=DEV-KUBE-CAP05P
+node06 new_hostname=DEV-KUBE-CAP06P
+
+[add_masters]
+node02
+node03
+
+[add_workers]
+node04
+node05
+node06
+
