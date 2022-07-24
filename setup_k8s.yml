@@ -18,8 +18,6 @@
   hosts: nodes
   become: yes
   tasks:
-  - name: ping
-    ping: 
   - name: install docker
     apt: name=docker.io state=latest
   - name: create dir 
