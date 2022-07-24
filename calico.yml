@@ -1,0 +1,8 @@
+- name: setup calico
+  hosts: node01
+  become: yes
+  tasks:
+  - name: install_calico_step1
+    command: kubectl create -f install_calico_step1.yml
+  - name: install_calico_step2
+    command: kubectl create -f install_calico_step2.yml
