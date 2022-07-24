@@ -1,6 +1,6 @@
 ---
 - name: add master nodes
-  hosts: masters
+  hosts: add_masters
   become: yes
   tasks:
   - name: init_master
