@@ -1,10 +1,19 @@
 [nodes]
+node01   ansible_host=192.168.100.201 ansible_user=root
+#node02   ansible_host=192.168.100.126 ansible_user=root
+#node03   ansible_host=192.168.100.127 ansible_user=root
+node04   ansible_host=192.168.100.128 ansible_user=root
+#node05   ansible_host=192.168.100.211 ansible_user=root
+#node06   ansible_host=192.168.100.212 ansible_user=root
+
+[ssh-copy]
 node01   ansible_host=192.168.100.201
-#node02   ansible_host=192.168.100.126 
+#node02   ansible_host=192.168.100.126
 #node03   ansible_host=192.168.100.127
 node04   ansible_host=192.168.100.128
 #node05   ansible_host=192.168.100.211
 #node06   ansible_host=192.168.100.212
+
 
 [rename]
 node01 new_hostname=DEV-KUBE-CAP01P
