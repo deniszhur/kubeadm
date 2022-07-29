@@ -1,16 +1,16 @@
 [nodes]
-node01   ansible_host=192.168.100.201 ansible_user=root
-#node02   ansible_host=192.168.100.126 ansible_user=root
-#node03   ansible_host=192.168.100.127 ansible_user=root
-node04   ansible_host=192.168.100.128 ansible_user=root
+node01   ansible_host=192.168.100.102 ansible_user=root
+node02   ansible_host=192.168.100.103 ansible_user=root
+node03   ansible_host=192.168.100.105 ansible_user=root
+node04   ansible_host=192.168.100.106 ansible_user=root
 #node05   ansible_host=192.168.100.211 ansible_user=root
 #node06   ansible_host=192.168.100.212 ansible_user=root
 
 [ssh-copy]
-n01   ansible_host=192.168.100.201
-#n02   ansible_host=192.168.100.126
-#n03   ansible_host=192.168.100.127
-n04   ansible_host=192.168.100.128
+n01   ansible_host=192.168.100.102
+n02   ansible_host=192.168.100.103
+n03   ansible_host=192.168.100.105
+n04   ansible_host=192.168.100.106
 #n05   ansible_host=192.168.100.211
 #n06   ansible_host=192.168.100.212
 
